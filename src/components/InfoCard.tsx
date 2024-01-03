@@ -5,7 +5,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export default function InfoCard({ type, data }: { type: string, data: any }) {
   const [title, setTitle] = useState("")
   const [answer, setAnswer] = useState("")
-  console.log(data)
 
   useEffect(() => {
     if (type === 'achieve_today') {

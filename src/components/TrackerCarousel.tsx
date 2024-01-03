@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/carousel"
 import useGoogleSpreadsheet from "@/hooks/useGoogleSpreadsheet"
 import InfoCard from "./InfoCard"
+import GoalsCard from "./GoalsCard"
 
 export default function TrackerCarousel() {
   const { data, loading, error } = useGoogleSpreadsheet()
@@ -21,7 +22,12 @@ export default function TrackerCarousel() {
           <CarouselItem className="w-screen">
             {data && !loading && !error && <InfoCard type="improve_today" data={data[0]} />}
           </CarouselItem>
-          <CarouselItem className="w-screen"></CarouselItem>
+          <CarouselItem className="w-screen">
+            {data && !loading && !error && <GoalsCard type="happiness" data={data} />}
+          </CarouselItem>
+          <CarouselItem className="w-screen">
+            {data && !loading && !error && <GoalsCard type="satisfaction" data={data} />}
+          </CarouselItem>
         </CarouselContent>
         <CarouselPrevious />
         <CarouselNext />
