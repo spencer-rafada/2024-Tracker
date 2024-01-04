@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+env:
+  VITE_ENDPOINT: ${{ vars.VITE_ENDPOINT}}
+
 jobs:
   build:
     runs-on: ubuntu-latest
