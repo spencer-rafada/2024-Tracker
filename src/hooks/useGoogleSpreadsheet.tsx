@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import config from '@/config.json'
 
 export default function useGoogleSpreadsheet() {
   const [data, setData] = useState(null)
@@ -9,7 +8,7 @@ export default function useGoogleSpreadsheet() {
   useEffect(() => {
     setLoading(true)
     try {
-      fetch(config.endpoint)
+      fetch(import.meta.env.VITE_ENDPOINT)
         .then((response) => response.json())
         .then((spreadsheetData) => {
           spreadsheetData.sort((a: any, b: any) => new Date(b.Timestamp).getTime() - new Date(a.Timestamp).getTime());
