@@ -32,3 +32,9 @@ export default {
 Challenges:
 1. Connecting Google Spreadsheet to React
 2. Found a technology solution using SheetDB.io
+3. Thinking it would be a simple program made me not do branching and all of the practice that I do and it led to having a poor developer experience for me as it led to bugs and pushing straight to prod
+
+What could I have improved>
+1. Planning the timeline and setting up a workflow for success and best quality product
+2. Tasking out everything for better scopes.
+3. Branching and TDD (?)
