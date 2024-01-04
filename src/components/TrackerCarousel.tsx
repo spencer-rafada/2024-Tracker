@@ -8,6 +8,7 @@ import {
 import useGoogleSpreadsheet from "@/hooks/useGoogleSpreadsheet"
 import InfoCard from "./InfoCard"
 import GoalsCard from "./GoalsCard"
+import HabitCard from "./HabitCard"
 
 export default function TrackerCarousel() {
   const { data, loading, error } = useGoogleSpreadsheet()
@@ -27,6 +28,9 @@ export default function TrackerCarousel() {
           </CarouselItem>
           <CarouselItem className="w-screen">
             {data && !loading && !error && <GoalsCard type="satisfaction" data={data} />}
+          </CarouselItem>
+          <CarouselItem className="w-screen">
+            {data && !loading && !error && <HabitCard data={data} />}
           </CarouselItem>
         </CarouselContent>
         <CarouselPrevious />

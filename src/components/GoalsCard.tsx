@@ -44,7 +44,7 @@ export default function GoalsCard({ type, data }: { type: string, data: Array<ob
               <XAxis dataKey={"Timestamp"} interval={0} />
               <YAxis domain={[0, 10]} tickCount={10} />
               <Tooltip />
-              <Line type="monotone" dataKey={key} activeDot={{ r: 8 }} />
+              <Line type="monotone" dataKey={key} activeDot={{ r: 8 }} name={title} />
             </LineChart>
           </ResponsiveContainer>
         </div>
