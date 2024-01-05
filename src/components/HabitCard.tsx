@@ -34,6 +34,7 @@ export default function HabitCard({ data }: { data: Array<object> }) {
               <Bar stackId='a' dataKey="2glass_y_n" name="2 Glasses of Water in the Morning" fill='#FE8B05' />
               <Bar stackId='a' dataKey="workout_y_n" name="Workout" fill='#F0C27B' />
               <Bar stackId='a' dataKey="cold_shower_y_n" name="Cold Shower" fill='#CDE9CA' />
+              <Bar stackId='a' dataKey="pd_y_n" name="Read Fundamentals to Software Architecture" fill='#616668' />
             </BarChart>
           </ResponsiveContainer>
         </div>
