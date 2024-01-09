@@ -57,7 +57,7 @@ export default function GoalsCard({
         ...day,
         Timestamp: new Date(
           (day as { Timestamp: string }).Timestamp
-        ).toLocaleDateString('en-US', { month: 'long', day: 'numeric' }),
+        ).toLocaleDateString('en-US', { weekday: 'long' }),
       }
     })
     setChartData(cleanData)
